@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Arial, serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+main {
+  margin: 0 10rem 0 10rem;
+}
+
+
+ul#menu {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+ 
+}
+
+ul#menu li {
+  padding: .7rem;
+  
+}
+
+nav {
+  background-color: #0071a5;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+ul#menu li i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+ul#menu li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+ul#menu li:hover {
+  transform: scale(1.2);
+}
+
+header img{
+  width: 100%;
+  margin-top: 3.7rem;
+}
+
+header h1{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+header p{
+  margin: 0 10rem 0 10rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+section#cursos h2{
+  text-align: center;
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+
+section#cursos {
+  margin-bottom: 10rem;
+}
+
+section#cards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  width: 20rem;
+  box-shadow: 5px 5px 5px 5px #00000020;
+  padding: 1rem;
+  transition: transform .5s ease-in-out;
+}
+
+.card img{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.card h3{
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.card p{
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+section#imagens{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section#imagens figure figcaption{
+  text-align: center;
+}
+
+section#imagens p {
+  padding: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+section#inscrevase{
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#inscrevase form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+section#inscrevase form input {
+  width: 100%;
+  padding: .5rem;
+  margin: .3rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
+  border: solid 1px #0071a5;
+}
+
+section#inscrevase form label{
+  margin: 0 1rem 0 1rem;
+  font-size: 1.3rem;
+  color: #0071a5;
+}
+
+section#inscrevase form button{
+  border: solid 2px #0071a5;
+  padding: .6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #0071a5;
+  width:20%;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.buttonDisable {
+  border: solid 2px gray !important;
+  color: gray !important;
+}
+
+.buttonDisable:hover{
+  color: #fff !important;
+  background-color: gray !important;
+}
+
+section#inscrevase form button:hover{
+  color: #fff;
+  background-color: #0071a5;
+}
+
+section#inscrevase img{
+  width: 50%;
+}
+
+section#inscrevase h2 {
+  width: 100%;
+  margin: 0 1rem 2rem 1rem;
+  text-align: center;
+  color: #0071a5;
+}
+
+
+footer {
+  background-color: #0071a5;
+  padding: 4rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover{
+  color: rgb(252, 175, 255);
+}
+
+
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="up"] {
+  transform: translate3d(0, 100%, 0)
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0)
+}
